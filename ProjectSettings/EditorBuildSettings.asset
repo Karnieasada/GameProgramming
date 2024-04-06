@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/game_opening.unity
+    guid: d77da24c0cc825548bfc2a9c24d63ea4
+  - enabled: 1
+    path: Assets/Scenes/new_game_scene.unity
+    guid: ddcde3dbb20164b43a67d22531a1e18a
+  - enabled: 1
+    path: Assets/Scenes/load_game_scene.unity
+    guid: 76fadbbee8d774749bfee80a0f179842
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 48187e1f769ac22479b4e4c696c5ea7e
+  - enabled: 1
+    path: Assets/Scenes/rowOperations_List.unity
+    guid: 984cdc1fc3213c94c893872e0162bc5a
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_Op_Tutorial.unity
+    guid: aee258aca82d4404794ad873125a55e3
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_puzzle_1.unity
+    guid: 698c8080c45b6734696c186b78d47fec
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_puzzle_2.unity
+    guid: 2af5f6bc431e5784eb4f7249811e5591
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_puzzle_3.unity
+    guid: 8d2449afa625dd5419d62e366a096897
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_puzzle_4.unity
+    guid: c151da6dc71a205489a5113cdc1d749d
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_puzzle_5.unity
+    guid: fb151de204a02df4aa7c646e0d56af8b
+  - enabled: 1
+    path: Assets/Scenes/Row Operations/row_op_Finish.unity
+    guid: a896f094f07066f49b75577212a89413
+  - enabled: 1
+    path: Assets/Scenes/transpose_list.unity
+    guid: b1161f56ab84a8f4ebf068f19751b68a
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_tutorial.unity
+    guid: a58918b62fac1dd43a543b48a7548869
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_one.unity
+    guid: e5f570b09c24e154d996f7e834e14d58
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_two.unity
+    guid: 7c4a6fe41e6d5ba4f940055f5e29cc0b
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_three.unity
+    guid: 91ad4e04a0c2bb34ca2991c0f2fca71c
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_four.unity
+    guid: e39434e15982cc84080b350b07b12711
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/t_puzzle_five.unity
+    guid: dee732cd742231f43979f88c94b01849
+  - enabled: 1
+    path: Assets/Scenes/Transpose Puzzles/transpose_Finish.unity
+    guid: 71a773fce1c68e7468e8c8b4643e3607
+  m_configObjects: {}
