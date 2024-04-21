@@ -13,7 +13,7 @@ public class new_game : MonoBehaviour
     public string gameSaveURL = "http://localhost/create_save.php?";
     public string checkSaveURL = "http://localhost/check_save.php?";
     public GameObject return_text, no_data;
-    // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -33,7 +33,7 @@ public class new_game : MonoBehaviour
         {
             return_text.SetActive(true);
         }
-        if (name != PlayerPrefs.GetString("name") && PlayerPrefs.GetString("name") == null)
+        if (name != PlayerPrefs.GetString("name"))
         {
             StartCoroutine(new_game_Check_Save_File());
         }
@@ -65,11 +65,13 @@ public class new_game : MonoBehaviour
             PlayerPrefs.SetString("Row_Puzzle_3_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_4_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_5_Flag", "");
+            PlayerPrefs.SetString("Row_Puzzle_6_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_1_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_2_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_3_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_4_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_5_Star_Flag", "");
+            PlayerPrefs.SetString("Row_Puzzle_6_Star_Flag", "");
             SceneManager.LoadScene("Main");
         }
         if (PlayerPrefs.GetString("name") == name)
@@ -111,11 +113,13 @@ public class new_game : MonoBehaviour
             PlayerPrefs.SetString("Row_Puzzle_3_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_4_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_5_Flag", "");
+            PlayerPrefs.SetString("Row_Puzzle_6_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_1_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_2_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_3_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_4_Star_Flag", "");
             PlayerPrefs.SetString("Row_Puzzle_5_Star_Flag", "");
+            PlayerPrefs.SetString("Row_Puzzle_6_Star_Flag", "");
             SceneManager.LoadScene("Main");
         }
         if (dataText == "no file")
@@ -172,11 +176,13 @@ public class new_game : MonoBehaviour
         PlayerPrefs.SetString("Row_Puzzle_3_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_4_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_5_Flag", "");
+        PlayerPrefs.SetString("Row_Puzzle_6_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_1_Star_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_2_Star_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_3_Star_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_4_Star_Flag", "");
         PlayerPrefs.SetString("Row_Puzzle_5_Star_Flag", "");
+        PlayerPrefs.SetString("Row_Puzzle_6_Star_Flag", "");
         SceneManager.LoadScene("Main");
     }
 

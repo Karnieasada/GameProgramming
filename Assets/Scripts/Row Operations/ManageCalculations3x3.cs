@@ -26,7 +26,7 @@ public class ManageCalculations3x3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //check_Done();
     }
 
     public void calculate_onClick()
@@ -266,5 +266,10 @@ public class ManageCalculations3x3 : MonoBehaviour
         {
             i_might_try_and_trick_you.SetActive(false);
         }
+    }
+
+    public void exit_Puzzle()
+    {
+        SceneManager.LoadScene("rowOperations_List");
     }
 }

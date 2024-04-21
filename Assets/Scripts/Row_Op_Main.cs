@@ -14,7 +14,7 @@ public class Row_Op_Main : MonoBehaviour
     public Text Score;
     public int score;
     public int flag_score;
-    public GameObject flag1, flag2, flag3, flag4, flag5;
+    public GameObject flag1, flag2, flag3, flag4, flag5, flag6;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +29,6 @@ public class Row_Op_Main : MonoBehaviour
         {
             score = Convert.ToInt32(Score.text) + 10;
             Score.text = score.ToString();
-            flag1.SetActive(true);
-        }
-        if (Score.text != "0" && PlayerPrefs.GetString("Row_Puzzle_1_Star_Flag") == "complete")
-        {
-            update_Score();
             flag1.SetActive(true);
         }
         if (Score.text != "0" && PlayerPrefs.GetString("Row_Puzzle_2_Star_Flag") == "complete")
@@ -56,6 +51,11 @@ public class Row_Op_Main : MonoBehaviour
             update_Score();
             flag5.SetActive(true);
         }
+        if (Score.text != "0" && PlayerPrefs.GetString("Row_Puzzle_6_Star_Flag") == "complete")
+        {
+            update_Score();
+            flag6.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -72,6 +72,11 @@ public class Row_Op_Main : MonoBehaviour
     public void row_op_Tutorial()
     {
         SceneManager.LoadScene("row_Op_Tutorial");
+    }
+
+    public void row_op_Tutorial_2()
+    {
+        SceneManager.LoadScene("row_Op_Tutorial_2");
     }
 
     public void row_Op_Puzzle_1()
@@ -96,6 +101,11 @@ public class Row_Op_Main : MonoBehaviour
     public void row_Op_Puzzle_5()
     {
         SceneManager.LoadScene("row_op_puzzle_5");
+    }
+
+    public void row_Op_Puzzle_6()
+    {
+        SceneManager.LoadScene("row_op_puzzle_6");
     }
 
     IEnumerator check_save_file()
@@ -165,6 +175,16 @@ public class Row_Op_Main : MonoBehaviour
                         Score.text = score.ToString();
                         flag5.SetActive(true);
                     }
+                    if (splitData[i] == "Puzzle 6complete")
+                    {
+                        score = Convert.ToInt32(Score.text) + 10;
+                        flag_score = Convert.ToInt32(Score.text) + 10;
+                        PlayerPrefs.SetString("Score", flag_score.ToString());
+                        PlayerPrefs.SetString("Row_Puzzle_6_Flag", "complete");
+                        PlayerPrefs.SetString("Row_Puzzle_6_Star_Flag", "complete");
+                        Score.text = score.ToString();
+                        flag6.SetActive(true);
+                    }
                 }
             }
         }
@@ -203,6 +223,14 @@ public class Row_Op_Main : MonoBehaviour
             PlayerPrefs.SetString("Score", flag_score.ToString());
             Score.text = score.ToString();
             flag5.SetActive(true);
+        }
+        if (PlayerPrefs.GetString("Row_Puzzle_6_Flag") == "complete" && flag6.activeSelf == false)
+        {
+            score = Convert.ToInt32(Score.text) + 10;
+            flag_score = Convert.ToInt32(Score.text) + 10;
+            PlayerPrefs.SetString("Score", flag_score.ToString());
+            Score.text = score.ToString();
+            flag6.SetActive(true);
         }
     }
 }

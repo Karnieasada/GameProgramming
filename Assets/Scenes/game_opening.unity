@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 2055115537}
   - component: {fileID: 2055115536}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: opening_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

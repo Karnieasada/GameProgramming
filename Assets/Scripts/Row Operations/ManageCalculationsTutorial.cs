@@ -202,4 +202,9 @@ public class ManageCalculations : MonoBehaviour
     {
         SceneManager.LoadScene("rowOperations_List");
     }
+
+    public void exit_Puzzle()
+    {
+        SceneManager.LoadScene("rowOperations_List");
+    }
 }

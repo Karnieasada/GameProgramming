@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using UnityEngine.U2D.IK;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 

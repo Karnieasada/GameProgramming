@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ManageTransposeGame : MonoBehaviour
+public class ManageTranspose3x3 : MonoBehaviour
 {
     public string updateURL = "http://localhost/updateTransposeScore.php?";
     public Image piece;
@@ -15,7 +15,7 @@ public class ManageTransposeGame : MonoBehaviour
     float phWdth, phHeigth;
     public GameObject check_img, check_PH;
     float timer;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +38,7 @@ public class ManageTransposeGame : MonoBehaviour
         phWdth = 100;
         phHeigth = 100;
         float nbRows, nbColumns;
-        nbRows = 3; 
+        nbRows = 3;
         nbColumns = 3;
         for (int i = 0; i < 9; i++)
         {
@@ -47,10 +47,10 @@ public class ManageTransposeGame : MonoBehaviour
             float row, column;
             row = i % 3;
             column = i / 3;
-            Vector3 phPosition = new Vector3(centerPosition.x + phWdth * (row-nbRows/2), centerPosition.y - phHeigth * (column - nbColumns/2), centerPosition.z);
+            Vector3 phPosition = new Vector3(centerPosition.x + phWdth * (row - nbRows / 2), centerPosition.y - phHeigth * (column - nbColumns / 2), centerPosition.z);
             Image ph = (Image)(Instantiate(placeHolder, phPosition, Quaternion.identity));
             ph.tag = "" + (i + 1);
-            ph.name ="PH"+(i + 1);
+            ph.name = "PH" + (i + 1);
             ph.transform.SetParent(GameObject.Find("Canvas").transform);
         }
     }
@@ -142,7 +142,7 @@ public class ManageTransposeGame : MonoBehaviour
             }
         }
     }
-
+    
     public string transpose_tag(string tag)
     {
         string t_tag = "";
@@ -217,4 +217,10 @@ public class ManageTransposeGame : MonoBehaviour
         string scene_TXT = SceneManager.GetActiveScene().name;
         return scene_TXT;
     }
+
+    public void exit_Puzzle()
+    {
+        SceneManager.LoadScene("transpose_list");
+    }
 }
+

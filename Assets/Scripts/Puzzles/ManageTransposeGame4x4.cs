@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ManageTranspose4x4 : MonoBehaviour
 {
     public string updateURL = "http://localhost/updateTransposeScore.php?";
     public Image piece;
@@ -218,4 +218,8 @@ public class NewBehaviourScript : MonoBehaviour
         return scene_TXT;
     }
 
+    public void exit_Puzzle()
+    {
+        SceneManager.LoadScene("transpose_list");
+    }
 }

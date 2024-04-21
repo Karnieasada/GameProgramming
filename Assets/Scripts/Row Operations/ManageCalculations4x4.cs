@@ -25,7 +25,7 @@ public class ManageCalculations4x4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //check_Done();
     }
 
     public void calculate_onClick()
@@ -281,5 +281,10 @@ public class ManageCalculations4x4 : MonoBehaviour
     public void check_text()
     {
 
+    }
+
+    public void exit_Puzzle()
+    {
+        SceneManager.LoadScene("rowOperations_List");
     }
 }
