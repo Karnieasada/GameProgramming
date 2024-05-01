@@ -6,7 +6,7 @@ in each category for the player to aid their knowledge of Linear Algebra.
 ### Installing
 The game can be played online using the WebGL platform [here](https://karnieasada.github.io/GameProgramming/).
 
-If you wish to play locally using the Unity editor you can download the folders for the Assets, Packages, and Project Settings. This should allow
+If you wish to play locally using the Unity editor you can download the folders for the [Assets](Assets), [Packages](Packages), and [Project Settings](ProjectSettings). This should allow
 you to play the game locally.
 
 ## Server Setup
@@ -19,7 +19,7 @@ to your htdocs or WWW folder to allow the game to communicate with the local ser
 The server interactions will only work when playing locally in the Unity Editor unless CORS compatibility is added to your local server.
 
 ## Testing
-The game makes use of over 101 Unity tests to test the logic and playing of the game to ensure the functions of the game perform reliablly.
+The game makes use of 101 Unity tests to test the logic and playing of the game to ensure the functions of the game perform reliablly.
 You can find these tests by downloading the game locally to play with the Unity Editor.
 
 ## Built With
