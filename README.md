@@ -13,7 +13,7 @@ you to play the game locally.
 The game allows for the use of either local save using Unity's built in PlayerPrefs or using a local server using PHP scripts.
 
 If you wish to use a MAMP server please follow this tutorial [here](https://www.youtube.com/watch?v=N0CPgBrjpl8&ab_channel=QVisible).
-From there you can then download the PHP scripts contained in the [Server Scripts]('Server Scripts') folder. These will need to be added
+From there you can then download the PHP scripts contained in the [Server Scripts](ServerScripts) folder. These will need to be added
 to your htdocs or WWW folder to allow the game to communicate with the local server.
 
 The server interactions will only work when playing locally in the Unity Editor unless CORS compatibility is added to your local server.
