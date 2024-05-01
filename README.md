@@ -6,7 +6,7 @@ in each category for the player to aid their knowledge of Linear Algebra.
 ### Installing
 The game can be played online using the WebGL platform [here](https://karnieasada.github.io/GameProgramming/).
 
-If you wish to play locally using the Unity editor you can download the folders for the [Assets](Assets), [Packages](Packages), and [Project Settings](ProjectSettings). 
+If you wish to play locally using the Unity editor you can download the folders for the [Assets](Assets), [Packages](Packages), and [Project Settings](ProjectSettings) using Unity Engine 2022.2.16f1. 
 
 This should allow you to play the game locally.
 
