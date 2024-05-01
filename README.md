@@ -35,4 +35,4 @@ Senior Computer Science student Northeastern State University.
 This project is licensed under the MIT License – see the [LICENSE.md](LICENSE) file for details 
 
 ## Acknowledgements
-Thank to Dr. Bekkering for giving me a challenging game project for the Spring 24 semester.
+Thanks to Dr. Bekkering for giving me a challenging game project for the Spring 24 semester.
