@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class New_Game_Tests
 {
@@ -42,6 +43,22 @@ public class New_Game_Tests
     {
         string expected = "new_game_scene";
         string name = SceneManager.GetActiveScene().name;
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator Opening_Screen_C_Button_Check()
+    {
+        GameObject tbtn = GameObject.Find("return_btn");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "game_opening";
         Assert.AreEqual(expected, name);
         yield return new WaitForSeconds(.3f);
     }

@@ -24,7 +24,6 @@ public class Transpose_Main : MonoBehaviour
         if (Score.text == "0" && PlayerPrefs.GetString("Puzzle_1_Flag") == "")
         {
             StartCoroutine(check_save_file());
-            update_Score();
         }
         if (Score.text == "0" && PlayerPrefs.GetString("Puzzle_1_Flag") == "complete")
         {

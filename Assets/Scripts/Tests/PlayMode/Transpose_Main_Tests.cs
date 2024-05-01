@@ -72,11 +72,114 @@ public class Transpose_Main_Tests
     }
 
     [UnityTest]
-    public IEnumerator check_Score()
+    public IEnumerator T_Main_Screen_R_Puzzle_Check()
     {
-        string expected = "0";
-        string txt = GameObject.Find("score").GetComponent<Text>().text;
-        Assert.AreEqual(expected, txt);
+        GameObject tbtn = GameObject.Find("return2Main");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "Main";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_T1_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("tutorial");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_tutorial";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_P1_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("puzzle1");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_one";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_P2_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("puzzle2");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_two";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_P3_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("puzzle3");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_three";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_P4_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("puzzle4");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_four";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator T_Main_Screen_P5_Puzzle_Check()
+    {
+        GameObject tbtn = GameObject.Find("puzzle5");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "t_puzzle_five";
+        Assert.AreEqual(expected, name);
         yield return new WaitForSeconds(.3f);
     }
 

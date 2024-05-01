@@ -75,6 +75,22 @@ public class Transpose_Puz_2_Tests
         yield return new WaitForSeconds(.2f);
     }
 
+    [UnityTest]
+    public IEnumerator T_Puzzle_2_R_Check()
+    {
+        GameObject tbtn = GameObject.Find("exit_to_main");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "transpose_list";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
     [TearDown]
     public void TearDown()
     {

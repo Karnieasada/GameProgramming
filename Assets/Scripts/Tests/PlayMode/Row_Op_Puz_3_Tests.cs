@@ -156,6 +156,22 @@ public class Row_Op_Puz_3_Tests
         yield return new WaitForSeconds(3f);
     }
 
+    [UnityTest]
+    public IEnumerator Row_Puzzle_3_R_Check()
+    {
+        GameObject tbtn = GameObject.Find("exit_to_main");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<UnityEngine.UI.Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "rowOperations_List";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
     [TearDown]
     public void Teardown() 
     {

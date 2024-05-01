@@ -146,10 +146,6 @@ public class new_game : MonoBehaviour
         {
             StartCoroutine(connectToPHP());
         }
-        else
-        {
-            StartCoroutine(connectToPHP());
-        }
     }
 
     IEnumerator connectToPHP()

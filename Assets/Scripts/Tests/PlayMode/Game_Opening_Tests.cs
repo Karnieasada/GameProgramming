@@ -44,6 +44,54 @@ public class Game_Opening_Tests
         yield return new WaitForSeconds(.3f);
     }
 
+    [UnityTest]
+    public IEnumerator Opening_Screen_N_Button_Check()
+    {
+        GameObject tbtn = GameObject.Find("new_game_btn");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "new_game_scene";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator Opening_Screen_L_Button_Check()
+    {
+        GameObject tbtn = GameObject.Find("load_game_btn");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "load_game_scene";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
+    [UnityTest]
+    public IEnumerator Opening_Screen_C_Button_Check()
+    {
+        GameObject tbtn = GameObject.Find("continue_game_btn");
+        Assert.IsNotNull(tbtn);
+        yield return new WaitForSeconds(.3f);
+
+        tbtn.GetComponent<Button>().onClick.Invoke();
+        yield return new WaitForSeconds(1f);
+
+        string name = SceneManager.GetActiveScene().name;
+        string expected = "Main";
+        Assert.AreEqual(expected, name);
+        yield return new WaitForSeconds(.3f);
+    }
+
     [TearDown]
     public void TearDown()
     {
