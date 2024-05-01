@@ -1,6 +1,6 @@
 # Linear Algebra
 This is a game made using the Unity Engine, which is intended to aid individuals with their understanding of a few core concepts in Linear Algebra.
-The game focuses on the areas of Tanspose operations and basic row operations in forming an identity matrix. The game uses simple controls with the mouse and keyboard and offers several puzzles
+The game focuses on the areas of Transpose operations and basic row operations in forming an identity matrix. The game uses simple controls with the mouse and keyboard and offers several puzzles
 in each category for the player to aid their knowledge of Linear Algebra.
 
 ### Installing
